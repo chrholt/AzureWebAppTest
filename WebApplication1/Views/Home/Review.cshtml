@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Review";
+}
+
+<h2>Review</h2>
+<h4 id="valueForReviewRange"></h4>
+<input type="range" step="2" min="10" max="20" id="reviewRange" onchange="updateValue()"/>
+<input type="submit" value="Submit" />
+
+@{ ViewBag.Message}
+
+<script type="text/javascript">
+
+    function updateValue() {
+        var value = document.getElementById('reviewRange').value;
+        var valueText = document.getElementById('valueForReviewRange').innerHTML;
+
+        valueText = value;
+    }
+</script>

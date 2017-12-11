@@ -26,5 +26,11 @@ namespace WebApplication1.Controllers
 
             return View();
         }
+
+        public ActionResult Review()
+        {
+            ViewBag.Message = "Please review";
+            return View();
+        }
     }
 }
